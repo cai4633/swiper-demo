@@ -1,0 +1,32 @@
+.swiper .image-wrapper {
+  width: 300px;
+  overflow: hidden;
+  margin: auto;
+  font-size: 0;
+}
+.swiper .image-wrapper .image {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.5s cubic-bezier(0.12, 0.61, 0.37, 0.87);
+}
+.swiper .controller1 {
+  display: none;
+  margin-top: 12px;
+  text-align: center;
+}
+.swiper .controller2 {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0;
+}
+.swiper .controller2 span {
+  display: inline-block;
+  border: 1px solid #aba2a2;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.swiper .controller2 .active {
+  background-color: #000;
+}
