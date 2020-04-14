@@ -1,13 +1,27 @@
-.swiper .image-wrapper {
+.swiper .image-wrapper.seamed {
   width: 300px;
   overflow: hidden;
   margin: auto;
   font-size: 0;
 }
-.swiper .image-wrapper .image {
+.swiper .image-wrapper.seamed .image {
   display: flex;
   flex-wrap: nowrap;
-  transition: all 0.5s cubic-bezier(0.12, 0.61, 0.37, 0.87);
+  transition: transform 0.5s cubic-bezier(0.12, 0.61, 0.37, 0.87);
+}
+.swiper .image-wrapper.seamless {
+  width: 300px;
+  overflow: hidden;
+  margin: auto;
+  font-size: 0;
+  position: relative;
+}
+.swiper .image-wrapper.seamless .image img {
+  display: inline-block;
+  widht: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .swiper .controller1 {
   display: none;
